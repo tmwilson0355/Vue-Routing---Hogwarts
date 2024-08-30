@@ -18,31 +18,39 @@ function goToCurriculumPage() {
       facilities, and a diverse array of magical subjects, Hogwarts offers students an unparalleled education that
       prepares them for a lifetime of magical discovery and personal growth.</p>
     <button @click="goToCurriculumPage()">View our curriculum!</button>
-  
+
     <h1>Hogwarts Houses</h1>
     <p>Every student is sorted into one of four prestigious houses: Gryffindor, HufflePuff, RavenClaw, or Slytherin.
       Each house embodies unique traits and values, fostering a sense of belonging, camaraderie, and personal growth.
       Together, these houses form the foundation of Hogwarts, shaping the character and experiences of its students as
       they embark on their magical journey. </p>
-      <br>
+    <br>
     <div class="houseNames">
-      <div class="gryffindor" @click="() => {$router.push(`/house/0367baf3-1cb6-4baf-bede-48e17e1cd005`
-)}">
+      <div class="gryffindor" @click="() => {
+        $router.push(`/house/0367baf3-1cb6-4baf-bede-48e17e1cd005`
+        )
+      }">
         <h3>Gryffindor</h3>
-        <img class="houseImg" src="/Users/twilson96/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-hogwarts/vue-router-example-pt1-student/src/assets/gryffindor.png">
+        <img class="houseImg"
+          src="/Users/twilson96/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-hogwarts/vue-router-example-pt1-student/src/assets/gryffindor.png">
       </div>
-      <div class="slytherin" @click="() => {$router.push(`/house/9704c47-f92e-40a4-8771-ed1899c9b9c1
-`)}">
+      <div class="slytherin" @click="() => {
+        $router.push(`/house/9704c47-f92e-40a4-8771-ed1899c9b9c1
+`)
+      }">
         <h3>Slytherin</h3>
-        <img class="houseImg" src="/Users/twilson96/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-hogwarts/vue-router-example-pt1-student/src/assets/slytherin.png">
+        <img class="houseImg"
+          src="/Users/twilson96/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-hogwarts/vue-router-example-pt1-student/src/assets/slytherin.png">
       </div>
-      <div class="ravenclaw" @click="() => {$router.push(`/house/805fd37a-65ae-4fe5-b336-d767b8b7c73a`)}">
+      <div class="ravenclaw" @click="() => { $router.push(`/house/805fd37a-65ae-4fe5-b336-d767b8b7c73a`) }">
         <h3>Ravenclaw</h3>
-        <img class="houseImg" src="/Users/twilson96/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-hogwarts/vue-router-example-pt1-student/src/assets/ravenclaw.png">
+        <img class="houseImg"
+          src="/Users/twilson96/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-hogwarts/vue-router-example-pt1-student/src/assets/ravenclaw.png">
       </div>
-      <div class="hufflepuff" @click="() => {$router.push(`/house/85af6295-fd01-4170-a10b-963dd51dce14`)}">
+      <div class="hufflepuff" @click="() => { $router.push(`/house/85af6295-fd01-4170-a10b-963dd51dce14`) }">
         <h3>Hufflepuff</h3>
-        <img class="houseImg" src="/Users/twilson96/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-hogwarts/vue-router-example-pt1-student/src/assets/hufflepuff.png">
+        <img class="houseImg"
+          src="/Users/twilson96/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-hogwarts/vue-router-example-pt1-student/src/assets/hufflepuff.png">
       </div>
     </div>
 
@@ -82,8 +90,8 @@ button {
 
 .houseNames {
   display: flex;
- 
- 
+
+
 }
 
 .houseImg {
@@ -91,7 +99,10 @@ button {
   width: 200px;
 }
 
-.gryffindor, .slytherin, .ravenclaw, .hufflepuff {
+.gryffindor,
+.slytherin,
+.ravenclaw,
+.hufflepuff {
   display: flex;
   flex-direction: column;
   align-items: center;
